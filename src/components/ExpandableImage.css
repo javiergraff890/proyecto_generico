@@ -1,0 +1,49 @@
+.expandable-image {
+  margin-top: 1rem;
+  cursor: zoom-in;
+  display: flex;
+  justify-content: center;
+}
+
+.expandable-image img {
+  max-width: 540px;
+  width: 100%;
+  border-radius: 8px;
+  transition: opacity 200ms ease;
+}
+
+.expandable-image img:hover {
+  opacity: 0.9;
+}
+
+.expandable-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+  animation: fadeIn 200ms ease;
+  padding: 1.5rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.expanded-img {
+  max-width: min(90vw, 900px);
+  max-height: 90vh;
+  border-radius: 8px;
+  object-fit: contain;
+  cursor: default;
+  animation: scaleIn 200ms ease;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
