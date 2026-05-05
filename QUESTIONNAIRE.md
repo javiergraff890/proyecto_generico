@@ -13,10 +13,10 @@ El agente debe:
 ## 0. Carpeta Base y Nombre → `vite.config.js` línea 6
 
 ### 0.1 Carpeta base
-> ¿Cuál debe ser la carpeta base del proyecto?
-> - Escribir "/" para raíz (valor por defecto)
-> - Escribir "/carpeta/" para una subcarpeta
-> Valor actual: "/"
+> ¿El proyecto está en la raíz del dominio o en una subcarpeta?
+> - Escribir "raíz" para raíz del proyecto (valor por defecto)
+> - Escribir el nombre de la carpeta (ej: "mi-proyecto")
+> Valor actual: "raíz"
 
 ### 0.2 Nombre del proyecto
 > ¿Cuál es el nombre del proyecto? (se usa para el título y archivo index.html)
