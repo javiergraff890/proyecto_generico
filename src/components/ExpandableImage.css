@@ -5,6 +5,11 @@
   justify-content: center;
 }
 
+.expandable-image + .section-text,
+.expandable-image + p {
+  margin-top: 1rem;
+}
+
 .expandable-image img {
   max-width: 540px;
   width: 100%;

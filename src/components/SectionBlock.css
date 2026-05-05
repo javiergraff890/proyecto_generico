@@ -35,6 +35,10 @@
   color: #6a6a6a;
 }
 
+.section-text.spacer {
+  margin-top: 1rem;
+}
+
 .showcase-image {
   margin-top: 1rem;
   display: flex;
